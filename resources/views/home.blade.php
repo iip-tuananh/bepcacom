@@ -11,7 +11,6 @@
 @section('css')
 @endsection
 @section('js')
-   
 @endsection
 @section('content')
 
@@ -52,7 +51,7 @@
                   <h3><a href="san-pham-moi" title="Sản phẩm bán chạy">Danh Mục Sản Phẩm</a></h3>
                   <p></p>
                </div>
-               <div class="evo-index-product-contain">
+               <div class="evo-index-product-contain  wow fadeInUp">
                   <div class="evo-block-product-slick">
                      @foreach ($categoryProduct as $cate )
                         <div class="evo-product-block-item">
@@ -88,8 +87,8 @@
       <div class="container-fluid">
          <div class="row fix-flex">
             <div class="col-md-6 col-sm-6 col-xs-12 fix-padding">
-               <div class="about-image">
-                  <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="{{$gioithieu->image}}" />
+               <div class="about-image ">
+                  <img class="lazy  "src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="{{$gioithieu->image}}" />
                </div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 fix-padding-right">
@@ -176,8 +175,13 @@
 </section>
 {{-- end section sản phẩm --}}
 <section class="awe-section-4">
+   <div class="bg-custom">
+      <img src="{{asset('frontend/images/banh-dua-dai-loan-ngon.png')}}" alt="" srcset="">
+   </div>
    <div class="section_san_pham maunen">
+      
       <div class="container">
+        
          <div class="row">
             <div class="col-md-6">
                <div class="titlecp clearfix text-center">

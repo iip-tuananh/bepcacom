@@ -401,6 +401,9 @@ header.header .header__left .menu-toggle {
     .section_san_pham .evo-index-product-contain .evo-block-product-slick-new .evo-product-block-item .product-thumb {
         height: 182px
     }
+    .bg-custom{
+        display: none;
+    }
 }
 
 @media (max-width: 991px) {
@@ -508,5 +511,10 @@ z-index: 20000;
     height: 222px;
     width: 300px;background-color: #d69c52;
     border-radius: 0% 100% 93% 16% / 100% 100% 0% 0%  ;
+}
+.bg-custom{
+    position: absolute;
+    right: 0px;
+    margin-bottom: 20px;
 }
     

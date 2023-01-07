@@ -182,4 +182,8 @@ class PageController extends Controller
         $data['news'] = Blog::where(['status'=>1, 'home_status'=>1])->orderBy('id', 'desc')->limit(10)->get(['id', 'title', 'slug', 'image']);
         return view('helpCus', $data);
     }
+    public function recruit($slug){
+        $data['tuyendung'] = PageContent::where(['status'=>1,'language'=>'vi', 'type'=>'ve-chung-toi','slug'=>$slug])->get(['title','slug','content','image'])->first();
+        return view('recruit', $data);
+    }
 }

@@ -42,7 +42,7 @@
                     <a href="{{route('lienHe')}}">Liên Hệ</a>
                 </li>
                 <li>
-                      <a href="">Tuyển Dụng</a>
+                     <a href="{{route('recruit',['slug'=>$tuyendung->slug])}}">Tuyển Dụng</a>
                 </li>
             </ul>
           </div>

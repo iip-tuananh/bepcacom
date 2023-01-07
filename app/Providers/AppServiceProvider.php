@@ -90,7 +90,8 @@ class AppServiceProvider extends ServiceProvider
                 'status'=>1, 'home_status'=>1
             ])->orderBy('id','DESC')->get(['id','title','slug','image','description','updated_at']);
             $hotProduct = Product::where(['status'=>1, 'discountStatus'=>1])->limit(8)->get(['id', 'name', 'cate_slug', 'slug','images','price','discount']);
-            $gioithieu = PageContent::where(['status'=>1,'language'=>'vi', 'type'=>'ve-chung-toi'])->get(['title','slug','content','image'])->first();
+            $gioithieu = PageContent::where(['status'=>1,'language'=>'vi', 'type'=>'ve-chung-toi'])->first(['title','slug','content','image']);
+            $tuyendung = PageContent::where(['status'=>1,'language'=>'vi', 'type'=>'ho-tro-khach-hang','slug'=>'tuyen-dung'])->first(['title','slug','content','image']);
             $helpCustomer = PageContent::where(['status'=>1,'language'=>'vi', 'type'=>'ho-tro-khach-hang'])->get(['title','slug']);
 
             $partners = Partner::where(['status'=>1])->get(['id','image','name','link']);
@@ -118,6 +119,7 @@ class AppServiceProvider extends ServiceProvider
                 'allproducts'=> $allproducts,
                 'blogs'=> $blogs,
                 'reviews' => $reviews,
+                'tuyendung'=> $tuyendung,
                 ]);    
         });  
     }

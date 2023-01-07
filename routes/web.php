@@ -40,7 +40,9 @@
     Route::get('linh-vuc/{slug}.html','PageController@serviceDetail')->name('serviceDetail');
     Route::get('tat-ca-linh-vuc.html','PageController@listService')->name('listService');
     Route::get('gioi-thieu.html','PageController@aboutUs')->name('aboutUs');  
-    Route::get('ho-tro-khach-hang/{slug}.html','PageController@helpCus')->name('helpCus');  
+    Route::get('ho-tro-khach-hang/{slug}.html','PageController@helpCus')->name('helpCus'); 
+    Route::get('tuyendung/{slug}.html','PageController@recruit')->name('recruit');  
+
     Route::get('cong-nghe.html','PageController@technology')->name('technology');   
     Route::get('lien-he.html','PageController@contact')->name('lienHe');
     Route::post('lien-he','PageController@postcontact')->name('postcontact');

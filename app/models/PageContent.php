@@ -28,6 +28,7 @@ class PageContent extends Model
                 $query->status = $request->status;
                 $query->type = $request->type;
                 $query->image = $request->image;
+                $query->slug = to_slug($request->title);
                 $query->description = $request->description;
                 $query->save();
             }else{
