@@ -118,7 +118,7 @@
         top:0px;
         /* display: flex; */
         /* position: absolute; */
-        transform: translateX(0px)!important;
+        transform: translateX(-10px)!important;
         justify-content: space-evenly;
         align-content: center;
     }
