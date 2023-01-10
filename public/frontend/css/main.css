@@ -240,7 +240,16 @@ header.header .header__left .menu-toggle {
         line-clamp: 5;
         -webkit-box-orient: vertical;
         list-style: none !important;
-    
+}
+.limit-text-9{
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    line-clamp: 9;
+    -webkit-box-orient: vertical;
+    list-style: none !important;
 }
 .hidden-ip{
     display: none !important;

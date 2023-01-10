@@ -95,7 +95,7 @@
                <div class="about-content">
                   <h3><span>{{$gioithieu->title}}</span></h3>
                   <p >
-                     <div class="limit-text-5">{!!$gioithieu->content!!}</div>
+                     <div class="limit-text-9">{!!$gioithieu->content!!}</div>
                   </p>
                   <a href="{{route('aboutUs')}}" title="Xem thêm">Xem thêm</a>
                </div>
@@ -236,7 +236,7 @@
                         <div class="clearfix evo-item-blogs">
                            <div class="evo-article-image">
                               <a href="{{route('detailBlog',['slug'=>$blog->slug])}}">
-                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="{{$blog->image}}" alt="C&#244;ng thức b&#225;nh t&#225;o hoa hồng cực xịn nếu bạn vừa muốn ăn ngon vừa muốn chụp ảnh &quot;sống ảo&quot;" class="lazy img-responsive center-block" />
+                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="{{$blog->image}}" alt="" class="lazy img-responsive center-block" />
                                  <div class="blog-date">{{ $blog->updated_at->format('d/m/Y')}}</div>
                               </a>
                            </div>
