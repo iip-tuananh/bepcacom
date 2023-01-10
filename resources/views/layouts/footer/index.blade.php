@@ -9,7 +9,7 @@
                    </a>
                    <ul>
                       <li>Địa chỉ:{{$setting->address1}}</li>
-                      <li>Điện thoại: <a href="tel:{{$setting->phone1}}" title="{{$setting->phone1}}">1900 6750</a></li>
+                      <li>Điện thoại: <a href="tel:{{$setting->phone1}}" title="{{$setting->phone1}}">{{$setting->phone1}}</a></li>
                       <li>Email <a href="mailto:{{$setting->email}}" title="{{$setting->email}}">{{$setting->email}}</a></li>
                    </ul>
                 </div>

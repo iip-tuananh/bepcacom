@@ -241,10 +241,9 @@
                               </a>
                            </div>
                            <div class="evo-article-content">
-                              <h3 class="line-clamp"><a href="/cong-thuc-banh-tao-hoa-hong-cuc-xin-neu-ban-vua-muon-an-ngon-vua-muon-chup-anh-song-ao" title="{{languageName($blog->title)}}">{{languageName($blog->title)}}</a></h3>
+                              <h3 class="line-clamp"><a href="{{route('detailBlog',['slug'=>$blog->slug])}}" title="{{languageName($blog->title)}}">{{languageName($blog->title)}}</a></h3>
                               <p class="limit-text-5">
-                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque exercitationem facere ullam, facilis nulla doloremque rerum sit eveniet est voluptatibus nemo illum voluptatem velit, temporibus corrupti repellat quidem maiores minima.
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim quo nihil corporis. Dignissimos, nam magnam at facere vel ducimus illum eveniet provident, fugit harum molestias optio illo! Ad, atque.
+                              {{languageName($blog->description)}}
                               </p>
                            </div>
                         </div>
