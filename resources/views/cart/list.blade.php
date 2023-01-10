@@ -74,8 +74,8 @@
                                 <div class="shopping-cart-table">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h1 class="lbl-shopping-cart lbl-shopping-cart-gio-hang">Giỏ hàngffffffffff
-                                                <span>(<span class="count_item_pr">44</span> sản phẩm)</span></h1>
+                                            <h1 class="lbl-shopping-cart lbl-shopping-cart-gio-hang">Giỏ hàng
+                                                <span>(<span class="count_item_pr"></span> sản phẩm)</span></h1>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -171,7 +171,7 @@
                                                                 <button
                                                                     class="button btn btn-large btn-block btn-danger btn-checkout evo-button"
                                                                     title="Thanh toán ngay" type="button"
-                                                                    onclick="window.location.href='/checkout'">Thanh toán
+                                                                    onclick="window.location.href='{{route('checkout')}}'">Thanh toán
                                                                     ngay</button>
                                                                 <button
                                                                     class="button btn-proceed-checkout btn btn-large btn-block btn-danger btn-checkouts"
