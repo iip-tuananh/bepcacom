@@ -62,7 +62,7 @@
                         <ul class="nav navbar-pills nav-category">
                            @foreach ($categoryProduct as $cate)
                               <li class="nav-item ">
-                                 <a class="nav-link" href="{{route('listCatePro')}}" title="{{languageName($cate->name)}}">{{languageName($cate->name)}}</a>
+                                 <a class="nav-link" href="{{route('allListProCate',['cate'=>$cate->slug])}}" title="{{languageName($cate->name)}}">{{languageName($cate->name)}}</a>
                               </li>
                            @endforeach
                         </ul>
