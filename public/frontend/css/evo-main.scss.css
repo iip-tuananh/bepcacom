@@ -1817,13 +1817,13 @@ footer.footer .copyright .footer-social li+li {
 .evo-product-block-item .product-thumb .label_product {
     position: absolute;
     top: 5px;
-    right: 5px
+    right: 10px;
 }
 
 .evo-product-block-item .product-thumb .label_product span {
     position: relative;
     display: inline-block;
-    background: #ddac55;
+    background: #ff0000;
     color: white;
     height: 26px;
     width: 26px;
@@ -2461,7 +2461,8 @@ footer.footer .copyright .footer-social li+li {
     left: 0;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    /* padding-top: 60px; */
 }
 
 .slick-track:before,

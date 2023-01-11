@@ -272,8 +272,36 @@ header.header .header__left .menu-toggle {
 }
 .resizeimg{
     height: 60px;
+  
 
     animation: zoom-out 1.5s;
+}
+.awe-section-1{
+    padding-top: 60px !important;
+}
+.awe-section-5 .gift-title {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 30px;
+    color: #000 !important;
+    padding-bottom: 25px;
+    text-align: center;
+    padding-top: 20px;
+}
+.gift-title a{
+    color: #000 !important;
+}
+.image-resize img {
+   
+    height: 350px;
+    object-fit: cover;  
+}
+@media only screen and (max-width:768px) {
+    .image-resize img {
+        width: 300px;
+        height:290px;
+        object-fit: cover;  
+    }
 }
 @keyframes zoom-out {
     from { height:120px

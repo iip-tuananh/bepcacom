@@ -1132,7 +1132,8 @@
 .section_gift .gift-list-product .evo-product-slide-item .product-img a.image-resize {
     display: block;
     position: relative;
-    height: 110px
+    height: 300px;
+    width: 300px;
 }
 
 .section_gift .gift-list-product .evo-product-slide-item .product-img a.image-resize img {

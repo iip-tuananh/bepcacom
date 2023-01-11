@@ -106,6 +106,98 @@
 </section>
 {{-- end section giới thiệu --}}
 <section class="awe-section-5">
+   <div class="row">
+      <div class="col-md-12 text-center">
+         <h3 class="gift-title"><a href="https://bepcacom.com/tat-ca-san-pham.html" title="Sản phẩm nổi bật">Danh sách sản phẩm</a></h3>
+         <p>Một số sản phẩm của cửa hàng !</p>
+         </div>
+   </div>
+   <div class="section_gift " data-src="//bizweb.dktcdn.net/100/366/378/themes/736342/assets/evo_gift_bg.jpg?1663905428530">
+      <div class="container">
+         <section class="main_container collection col-md-12 col-sm-12 col-xs-12">
+            <div class="category-products products category-products-grids clearfix">
+               <div class="sort-cate clearfix ">
+                
+               <section class="products-view products-view-grid row">
+                  @foreach ($allproducts as $product)
+                  @php
+                     $img = json_decode($product->images);
+                     $discountprice = $product->price -($product->price * $product->discount/100);
+                  @endphp
+                     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 pd">
+                        <div class="evo-product-block-item">
+                           <div class="product-thumb">
+                              <a href="{{route('detailProduct',['cate'=>$product->cate_slug,'slug'=>$product->slug])}}" title="{{languageName($product->name)}}">
+                              <img class="lazy" src="{{$img[0]}}" data-src="{{$img[0]}}" alt="{{languageName($product->name)}}" />
+                              </a>
+                              @if ($product->discount > 0)
+                                 <div class="label_product"><span class="label_sale"> {{$product->discount}}% </span></div>
+                              @endif
+                           </div>
+                           @if($product->discount >0 && $product->price >0)
+                              <div class="product-content">
+                                 
+                                 <div class="product-desc">
+                                    <a class="product-title" href="{{route('detailProduct',['cate'=>$product->cate_slug,'slug'=>$product->slug])}}" title="{{languageName($product->name)}}">{{languageName($product->name)}}</a>
+                                    <span class="product-price">
+                                    <del>{{number_format($product->price,0,'','.')}}₫</del>
+                                    {{number_format($discountprice,0,'','.')}}₫
+                                    </span>
+                                 </div>
+   
+                                 <form  class="product-shopping hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart" >
+                                    <a href="{{route('detailProduct',['cate'=>$product->cate_slug,'slug'=>$product->slug])}}">
+                                    <button  title="Tùy chọn" type="button" class="action cart-button option-icons">Xem chi tiết</button>
+                                    </a>
+                                   
+                                 </form>
+                              </div>
+                           @elseif($product->price > 0 && $product->discount == 0)
+                                 <div class="product-content">
+                                       
+                                    <div class="product-desc">
+                                       <a class="product-title" href="{{route('detailProduct',['cate'=>$product->cate_slug,'slug'=>$product->slug])}}" title="{{languageName($product->name)}}">{{languageName($product->name)}}</a>
+                                       <span class="product-price">
+                                       {{number_format($product->price,0,'','.')}}₫
+                                       </span>
+                                    </div>
+   
+                                    <form  class="product-shopping hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart" >
+                                       <a href="{{route('detailProduct',['cate'=>$product->cate_slug,'slug'=>$product->slug])}}">
+                                       <button  title="Tùy chọn" type="button" class="action cart-button option-icons">Xem chi tiết</button>
+                                       </a>
+                                      
+                  
+                                    </form>
+                                 </div>
+                           @else
+                           <div class="product-content">
+                                       
+                              <div class="product-desc">
+                                 <a class="product-title" href="{{route('detailProduct',['cate'=>$product->cate_slug,'slug'=>$product->slug])}}" title="{{languageName($product->name)}}">{{languageName($product->name)}}</a>
+                                 <span class="product-price">
+                                 Liên hệ
+                                 </span>
+                              </div>
+   
+                              <form  class="product-shopping hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart" >
+                                 <a href="{{route('detailProduct',['cate'=>$product->cate_slug,'slug'=>$product->slug])}}">
+                                 <button  title="Tùy chọn" type="button" class="action cart-button option-icons">Xem chi tiết</button>
+                                 </a>
+                              </form>
+                           </div>
+                           @endif
+                        </div>
+                     </div>
+                  @endforeach
+                  <div class="clearfix"></div>
+               </section>
+            </div>
+         </section>
+      </div>
+   </div>
+</section>
+{{-- <section class="awe-section-5">
    <div class="section_gift " data-src="//bizweb.dktcdn.net/100/366/378/themes/736342/assets/evo_gift_bg.jpg?1663905428530">
       <div class="container">
          <div class="row">
@@ -172,7 +264,7 @@
          </div>
       </div>
    </div>
-</section>
+</section> --}}
 {{-- end section sản phẩm --}}
 <section class="awe-section-4">
    <div class="bg-custom">
