@@ -75,7 +75,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h1 class="lbl-shopping-cart lbl-shopping-cart-gio-hang">Giỏ hàng
-                                                <span>(<span class="count_item_pr"></span> sản phẩm)</span></h1>
+                                                <span>(<span class="count_item_pr">{{count($cartcontent)}}</span> sản phẩm)</span></h1>
                                         </div>
                                     </div>
                                     <div class="row">
